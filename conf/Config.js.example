@@ -1,0 +1,13 @@
+module.exports = {
+    JWT_SECRET: 'SomeLongStringHere',
+    SALT: 'SomeLongStringHereAlso',
+    EMAIL: 'emailfrom.yourdomain.com',
+    EMAIL_PASSWORD: 'yoursmtpemailpassword',
+    EMAIL_SMTP: 'smtp.something.com',
+    EMAIL_NAME: 'This will show as from name',
+    DB_URL: 'mongodb://USERNAME:PASSWORD@localhost:27017/DBNAME?authMechanism=DEFAULT&authSource=AUTHDBNAME',
+    DB_PORT: 27017,
+    APP_PORT: 3011,
+    UPLOAD_DIR: 'uploads/',
+    UPLOAD_FILE_SIZE_LIMIT:30000000
+};

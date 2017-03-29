@@ -1,0 +1,54 @@
+var Upload = require('s3-uploader');
+
+var uploadConfig = {
+  aws: {
+    path: 'subpath/',
+    region: 'us-west-1',
+    acl: 'public-read',
+    accessKeyId:'YourKeyHere',
+    secretAccessKey:'YourSecretAccessKeyHere'
+  },
+  cleanup: {
+    versions: true,
+    original: true
+  },
+  original: {
+    awsImageAcl: 'private',
+    format: 'jpg'
+  },
+  resize:{
+    quality:100
+  },
+  versions: [{
+    maxHeight: 1040,
+    maxWidth: 1040,
+    suffix: '_large',
+    quality: 80,
+    awsImageExpires: 31536000,
+    awsImageMaxAge: 31536000,
+    format: 'jpg'
+  },{
+    maxWidth: 780,
+    Xaspect: '3:2!h',
+    suffix: '_medium',
+    format: 'jpg'
+  },{
+    maxWidth: 320,
+    Xaspect: '16:9!h',
+    suffix: '_small',
+    format: 'jpg'
+  },{
+    maxHeight: 100,
+    aspect: '1:1',
+    suffix: '_thumb1',
+    format: 'png',
+  },{
+    maxHeight: 250,
+    maxWidth: 250,
+    aspect: '1:1',
+    suffix: '_thumb2',
+    format: 'png'
+  }]
+};
+
+module.exports = new Upload('yourS3BucketName', uploadConfig);

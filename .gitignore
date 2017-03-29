@@ -2,4 +2,5 @@ dist
 lib
 node_modules
 *.log
-conf
+conf/Config.js
+conf/S3Config.js
