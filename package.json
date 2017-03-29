@@ -1,0 +1,23 @@
+{
+  "name": "fishdata",
+  "version": "1.0.0",
+  "description": "data api for fishblab",
+  "main": "app.js",
+  "scripts": {
+    "start": "node api.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Joe Junkin",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^1.0.2",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.14.0",
+    "jsonwebtoken": "^7.2.1",
+    "mime": "^1.3.4",
+    "mongoose": "^4.8.0",
+    "multer": "^1.3.0",
+    "nodemailer": "^2.7.2",
+    "s3-uploader": "^2.0.3"
+  }
+}

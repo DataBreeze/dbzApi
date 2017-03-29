@@ -1,0 +1,3 @@
+Databreeze API
+
+The Databreeze backend database api. This recieves ajax calls from both client and server and provides access to the database.  
