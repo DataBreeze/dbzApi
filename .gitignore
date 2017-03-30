@@ -1,5 +1,4 @@
 dist
-lib
 node_modules
 *.log
 conf/Config.js
