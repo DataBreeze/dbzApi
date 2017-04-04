@@ -10,8 +10,7 @@ module.exports = {
     APP_PORT: 3011,
     UPLOAD_DIR: 'uploads/',
     UPLOAD_FILE_SIZE_LIMIT:30000000,
-    COOOKIE_MAX_AGE: 8640000000,
-    COOOKIE_DOMAIN: 'www.yourdomain.com',
-    COOOKIE_PATH: '/',
-
+    COOKIE_MAX_AGE: 8640000000,
+    COOKIE_DOMAIN: 'www.yourdomain.com',
+    COOKIE_PATH: '/',
 };
