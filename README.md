@@ -1,10 +1,10 @@
-#Databreeze API Server
+# Databreeze API Server
 
 The **Databreeze** database API server responds to ajax requests from the Databreeze application server or web client via fetchjs ajax calls. This API Server allows account creation, login and account management using json web tokens (JWT). It allows read and wrie access to a mongodb server. The system handles image uploads including the creation of multiple resized images before uploading the images to Amazon S3.
 
 The server utilizes nodeJS and expressJS to handle web requests/responses and mongoose to query the mongodb database server.
 
-##Github modules used:
+## Github modules used:
 * bcrypt to hash passwords
 * cluster to add scaleability
 * cookie-parser to validate JWT
@@ -21,7 +21,7 @@ copy dbzApi/conf/Config.js.example to dbzApi/conf/Config.js and edit the file to
 
 copy dbzApi/conf/S3Config.js.example to dbzApi/conf/S3Config.js and edit the file to add your Amazon S3 specific settings. If this is not done file uploads to S3 will not function.
 
-##installation
+## installation
 git clone git@github.com:DataBreeze/dbzApi.git
 cd dbzApi
 npm install
