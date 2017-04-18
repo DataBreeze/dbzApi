@@ -7,15 +7,15 @@ The server utilizes nodeJS and expressJS to handle web requests/responses and mo
 ## Github modules used:
 * bcrypt to hash passwords
 * cluster to add scaleability
-* cookie-parser to validate JWT
+* cookie-parser to receive JWT cookie
 * express server
-* jsonwebtoken to validate user
+* jsonwebtoken to validate user for database writes
 * mongoose to access mongoDB
 * multer to handle uploaded files and form data
 * nodemailer to send password reset emails that allow users to reset their passwords
 * S3-uploader to resize images and upload them to S3
 
-In order to operate the Databreeze application server, an API server is required. This repo will need to be downloaded and installed and then the system needs to be configured:
+In order to operate the [Databreeze application server](https://github.com/DataBreeze/dbz), this API server is required. This repo will need to be downloaded and installed and then the system needs to be configured:
 
 copy dbzApi/conf/Config.js.example to dbzApi/conf/Config.js and edit the file to add your config settings. If this is not done the api server will not start
 
