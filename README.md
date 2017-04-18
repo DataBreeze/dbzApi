@@ -23,5 +23,7 @@ copy dbzApi/conf/S3Config.js.example to dbzApi/conf/S3Config.js and edit the fil
 
 ## installation
 git clone git@github.com:DataBreeze/dbzApi.git
+
 cd dbzApi
+
 npm install
