@@ -17,9 +17,14 @@ The server utilizes nodeJS and expressJS to handle web requests/responses and mo
 
 ## Important Files
 
-- [api.js](https://github.com/DataBreeze/dbzApi/blob/master/api.js) The main entry point for the API server. Utilizes node express, cluster, multer and cookie parser. Sets up routing for User Authentication calls as well as data source calls.
+### [api.js](https://github.com/DataBreeze/dbzApi/blob/master/api.js)
 
-- [lib/](https://github.com/DataBreeze/dbzApi/tree/master/lib)
+- The main entry point for the API server. Utilizes node express, cluster, multer and cookie parser. Sets up routing for User Authentication calls as well as data source calls.
+
+### [lib/](https://github.com/DataBreeze/dbzApi/tree/master/lib)
+
+- The library files contain all of the database structure and calls. File upload to S3 is handled here as well as user Authentication and emails.
+
 
 ## Installation
 
