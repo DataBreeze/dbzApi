@@ -15,6 +15,8 @@
 
 - `cp S3Config.js.example S3Config.js`
 
-- `cp S3Config.js.example to S3Config.js`
-
 - edit the file to add your Amazon S3 specific settings. Your S3 bucket should be set in place of 'yourS3BucketName'. The rest of the settings are defined by the `s3-uploader` configuration. Please see the [s3-uploader](https://github.com/Turistforeningen/node-s3-uploader) documentation for more information.
+
+### Author
+
+Joe Junkin [joe.junkin.com](http://joe.junkin.com)

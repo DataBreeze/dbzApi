@@ -19,9 +19,7 @@ The server utilizes nodeJS and expressJS to handle web requests/responses and mo
 
 - [api.js](https://github.com/DataBreeze/dbzApi/blob/master/api.js) The main entry point for the API server. Utilizes node express, cluster, multer and cookie parser. Sets up routing for User Authentication calls as well as data source calls.
 
-- [lib/fbDB.js](https://github.com/DataBreeze/dbzApi/blob/master/lib/fbDB.js) This module is used to connect to and access the mongoDB utilizing mongoose calls. File uploads to S3 are managed as well as User authentication and the sending of emails.
-
-- [lib/fbModels.js](https://github.com/DataBreeze/dbzApi/blob/master/lib/fbModels.js) This module defines the mongoose models used by the system.
+- [lib/](https://github.com/DataBreeze/dbzApi/tree/master/lib)
 
 ## Installation
 
