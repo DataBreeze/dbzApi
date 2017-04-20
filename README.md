@@ -19,7 +19,7 @@ The server utilizes nodeJS and expressJS to handle web requests/responses and mo
 
 ### [api.js](https://github.com/DataBreeze/dbzApi/blob/master/api.js)
 
-- The main entry point for the API server. Utilizes node express, cluster, multer and cookie parser. Sets up routing for User Authentication calls as well as data source calls.
+- The main entry point for the API server. Utilizes node express, cluster, multer and cookie parser. Sets up routing for User Authentication calls as well as data source calls loads and calls lib/fbDB.js.
 
 ### [lib/](https://github.com/DataBreeze/dbzApi/tree/master/lib)
 
