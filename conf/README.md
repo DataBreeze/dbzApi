@@ -8,7 +8,7 @@
 
 - `cp Config.js.example Config.js`
 
-- edit the file to add your config settings. Here you will find options for JWT secret, salt, email settings (used for password reset), ports, mongoDB access url, upload settings and cookie settings.
+- edit the file to add your config settings. Here you will find options for JWT secret, salt, email settings (used for password reset), ports, mongoDB access url, upload settings, cookie settings and a **list of the available data sources**. Each Data source name must correspond to a model defined in lib/fbModels.js. 
 
 
 ### Create and edit the S3Config.js file:

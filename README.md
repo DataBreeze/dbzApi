@@ -15,9 +15,13 @@ The server utilizes nodeJS and expressJS to handle web requests/responses and mo
 * nodemailer to send password reset emails that allow users to reset their passwords
 * S3-uploader to resize images and upload them to S3
 
+## Important Files
+
+- [api.js](https://github.com/DataBreeze/dbzApi/blob/master/api.js) The main entry point for the API server. Utilizes node express, cluster, multer and cookie parser. Sets up routing for User Authentication calls as well as data source calls. 
+
 ## Installation
 
-### In order to operate the [Databreeze application server](https://github.com/DataBreeze/dbz), this API server is required. This repo will need to be downloaded and installed and then the system needs to be configured. By default the application attempts to run the express server on port 3011. You may wish to use nginx or apache to proxy pass http or https calls to the node/express API server.
+In order to operate the [Databreeze application server](https://github.com/DataBreeze/dbz), this API server is required. This repo will need to be downloaded and installed and then the system needs to be configured. By default the application attempts to run the express server on port 3011. You may wish to use nginx or apache to proxy pass http or https calls to this node/express API server.
 
 ### download and install the source
 
@@ -32,3 +36,6 @@ The server utilizes nodeJS and expressJS to handle web requests/responses and mo
 
 - [conf/README.md](https://github.com/DataBreeze/dbzApi/blob/master/conf/README.md)
 
+### Author
+
+Joe Junkin [joe.junkin.com](http://joe.junkin.com)

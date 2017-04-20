@@ -80,9 +80,13 @@ if (cluster.isMaster) {
   });
 
   ///////////////
-  // SOURCE STUFF
+  // DATA SOURCE STUFF
+  // IF YOU HVE NEW SOURCES ADD THEM TO CONFIG FILE AS 'SOURCES'
   function sourceValid(source){
-    return source.match(/^(guide|photo|report|blog|discuss|spot|area|user|group|fish)$/);
+    if( Config.SOURCES.find( function(sourceName){ return (sourceName === source); }) !== undefined ){
+      return true;
+    }
+    return false;
   }
   var sourceHandler = function (req, res, next, source) {
     if( ! sourceValid(source) ){
@@ -106,12 +110,12 @@ if (cluster.isMaster) {
   // search records
   router.get('/s/:source/s/:searchText', listAll);
   
-  // UPLOAD
+  // UPLOAD FILE
   router.post('/s/:source/u/(:id)?', uploadMiddleware.array('photo',10), function (req, res, next) {
     db.uploadInit(req, res);
   });
   
-  // edit rec
+  // edit record
   router.post('/s/:source/e/:id', uploadMiddleware.none(), function (req, res) {
     db.edit(req, res);
   });
