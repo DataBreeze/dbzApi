@@ -1,5 +1,6 @@
 dist
 node_modules
 *.log
+*~
 conf/Config.js
 conf/S3Config.js

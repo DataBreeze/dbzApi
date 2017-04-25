@@ -13,5 +13,6 @@ module.exports = {
     COOKIE_MAX_AGE: 8640000000,
     COOKIE_DOMAIN: 'www.yourdomain.com',
     COOKIE_PATH: '/',
+    COOKIE_SECURE: false,
     SOURCES: ['photo', 'spot', 'user', 'fish'],
 };
